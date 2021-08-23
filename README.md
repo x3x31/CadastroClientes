@@ -24,10 +24,8 @@ Projeto desenvolvido como desafio de programação
 
       f) Ativo (se está ativo);     
 
-      g) Telefone, contendo ddd e número, permitir adicionar mais do que um e remover os
-
- adicionados. (Mestre Detalhe)
-
+      g) Telefone, contendo ddd e número, permitir adicionar mais do que um e remover os adicionados. (Mestre Detalhe)
+      
       h) Endereço, contendo logradouro, número, CEP (Via CEP Rest), Bairro, Cidade, estado, país.(Mestre Detalhe)
 
       i) Ao gravar validar se já existe um cliente cadastrado com o CPF/CNPJ informado.
