@@ -34,7 +34,7 @@ Projeto desenvolvido como desafio de programação
 
 ## 📦 Tecnologias
 
-DELPHI, SQLLite, DUnuit e DUnitX
+DELPHI, SQLite, DUnuit e DUnitX
 
 ## ✒️ Autor
 
