@@ -36,6 +36,12 @@ Projeto desenvolvido como desafio de programação
 
 DELPHI, SQLite, DUnuit e DUnitX
 
+
+## 📌 Versão 1.0
+
+![image](https://user-images.githubusercontent.com/16948819/130442647-7e8024e9-65e0-42b6-befa-02bf4ddfa853.png)
+
+
 ## ✒️ Autor
 
 Michel Alves
