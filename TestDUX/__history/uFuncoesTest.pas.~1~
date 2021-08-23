@@ -1,0 +1,31 @@
+unit uFuncoesTest;
+
+interface
+uses
+  DUnitX.TestFramework;
+
+type
+
+  [TestFixture]
+  TestDUX = class(TObject) 
+  public
+    [Setup]
+    procedure Setup;
+    [TearDown]
+    procedure TearDown;
+  end;
+
+implementation
+
+procedure TestDUX.Setup;
+begin
+end;
+
+procedure TestDUX.TearDown;
+begin
+end;
+
+
+initialization
+  TDUnitX.RegisterTestFixture(TestDUX);
+end.

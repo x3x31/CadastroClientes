@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/08/19 00:01:17.000.883,=C:\Users\x3x31\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/19 00:01:56.000.261,D:\Projetos\CadastroCliente\untCadastroCliente.dfm=C:\Users\x3x31\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/08/19 00:01:56.000.261,D:\Projetos\CadastroCliente\untCadastroCliente.pas=C:\Users\x3x31\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/08/19 00:02:06.000.584,D:\Projetos\CadastroCliente\CadastroCliente.dproj=C:\Users\x3x31\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/08/20 00:30:23.000.304,=D:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2021/08/20 00:30:48.000.312,D:\Projetos\CadastroCliente\Unit1.dfm=D:\Projetos\CadastroCliente\dmConexao.dfm</Transaction>
+    <Transaction>2021/08/20 00:30:48.000.312,D:\Projetos\CadastroCliente\Unit1.pas=D:\Projetos\CadastroCliente\dmConexao.pas</Transaction>
+    <Transaction>2021/08/20 23:06:44.000.405,=D:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2021/08/20 23:08:15.000.167,D:\Projetos\CadastroCliente\untConsultaCliente.dfm=D:\Projetos\CadastroCliente\Unit1.dfm</Transaction>
+    <Transaction>2021/08/20 23:08:15.000.167,D:\Projetos\CadastroCliente\untConsultaCliente.pas=D:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2021/08/21 00:20:13.000.079,D:\Projetos\CadastroCliente\untConsultaCliente.pas=</Transaction>
+    <Transaction>2021/08/21 15:38:26.000.651,=D:\Projetos\CadastroCliente\untConsultaCliente.pas</Transaction>
+    <Transaction>2021/08/22 20:29:24.000.622,=D:\Projetos\CadastroCliente\Unit1.pas</Transaction>
+    <Transaction>2021/08/22 20:29:43.000.403,D:\Projetos\CadastroCliente\Unit1.pas=D:\Projetos\CadastroCliente\untFuncoes.pas</Transaction>
+  </Transactions>
+</BorlandProject>

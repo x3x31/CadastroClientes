@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{56682D30-3F43-42BB-8AC5-AC78A9E508A3}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CadastroCliente.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Test\CadastroClienteTests.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TestDUX\Project1.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CadastroCliente">
+        <MSBuild Projects="CadastroCliente.dproj"/>
+    </Target>
+    <Target Name="CadastroCliente:Clean">
+        <MSBuild Projects="CadastroCliente.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CadastroCliente:Make">
+        <MSBuild Projects="CadastroCliente.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CadastroClienteTests">
+        <MSBuild Projects="Test\CadastroClienteTests.dproj"/>
+    </Target>
+    <Target Name="CadastroClienteTests:Clean">
+        <MSBuild Projects="Test\CadastroClienteTests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CadastroClienteTests:Make">
+        <MSBuild Projects="Test\CadastroClienteTests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Project1">
+        <MSBuild Projects="TestDUX\Project1.dproj"/>
+    </Target>
+    <Target Name="Project1:Clean">
+        <MSBuild Projects="TestDUX\Project1.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project1:Make">
+        <MSBuild Projects="TestDUX\Project1.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CadastroCliente;CadastroClienteTests;Project1"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CadastroCliente:Clean;CadastroClienteTests:Clean;Project1:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CadastroCliente:Make;CadastroClienteTests:Make;Project1:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,16 @@
+program CadastroCliente;
+
+uses
+  Vcl.Forms,
+  untCadastroCliente in 'untCadastroCliente.pas' {frmCadastroCliente},
+  dmConexao in 'dmConexao.pas' {dmConn: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmCadastroCliente, frmCadastroCliente);
+  Application.CreateForm(TdmConn, dmConn);
+  Application.Run;
+end.

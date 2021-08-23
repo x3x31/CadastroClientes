@@ -1,0 +1,63 @@
+unit uFuncoesTest;
+
+interface
+uses
+  DUnitX.TestFramework, untFuncoes;
+
+type
+
+  [TestFixture]
+  TestDUX = class(TObject)
+  private
+    FuntFuncoes : TuntFuncoes;
+  public
+    [Setup]
+    procedure Setup;
+    [TearDown]
+    procedure TearDown;
+
+    [Test]
+    [TestCaseAttribute('Verificar se todos os campos foram preenchidos','445.257.320-75,F,A,Michel Willian Alves,true')]
+    procedure ValidarCampos(nome, ativo, tipo, cpf : string; resultado : boolean);
+
+    [Test]
+    [TestCaseAttribute('Verificar se todos os campos foram preenchidos',',F,A,Michel Willian Alves,false')]
+    [TestCaseAttribute('Verificar se todos os campos foram preenchidos','445.257.320-75,,A,Michel Willian Alves,false')]
+    [TestCaseAttribute('Verificar se todos os campos foram preenchidos','445.257.320-75,F,,Michel Willian Alves,false')]
+    [TestCaseAttribute('Verificar se todos os campos foram preenchidos','445.257.320-75,F,A,,false')]
+    [TestCaseAttribute('Verificar se todos os campos foram preenchidos',',,,,false')]
+    procedure ValidarCamposVazios(nome, ativo, tipo, cpf : string; resultado : boolean);
+
+  end;
+
+implementation
+
+procedure TestDUX.Setup;
+begin
+end;
+
+procedure TestDUX.TearDown;
+begin
+end;
+
+
+procedure TestDUX.ValidarCampos(nome, ativo, tipo, cpf: string; resultado : boolean);
+var
+  FResultadoAux : Boolean;
+begin
+  FResultadoAux := FuntFuncoes.ValidarCampos(nome, ativo, tipo, cpf);
+  Assert.AreEqual(resultado, FResultadoAux, 'Deveria ter retornado True');
+end;
+
+procedure TestDUX.ValidarCamposVazios(nome, ativo, tipo, cpf: string;
+  resultado: boolean);
+var
+  FResultadoAux : Boolean;
+begin
+  FResultadoAux := FuntFuncoes.ValidarCampos(nome, ativo, tipo, cpf);
+  Assert.AreEqual(resultado, FResultadoAux, 'Deveria ter retornado False');
+end;
+
+initialization
+  TDUnitX.RegisterTestFixture(TestDUX);
+end.

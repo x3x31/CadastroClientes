@@ -1,0 +1,38 @@
+unit untConsultaCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, System.ImageList, Vcl.ImgList,
+  Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.Mask;
+
+type
+  TfrmConsultaCliente = class(TForm)
+    pnCampos: TPanel;
+    DBGrid1: TDBGrid;
+    pnBotoes: TPanel;
+    btConfirmar: TButton;
+    btPesquisar: TButton;
+    btSair: TButton;
+    btCancelar: TButton;
+    btInformacao: TButton;
+    imgConsulta: TImageList;
+    lbDescricao: TLabel;
+    dbeCli_nome: TDBEdit;
+    lbSituacao: TLabel;
+    dbeCli_ativo: TDBComboBox;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConsultaCliente: TfrmConsultaCliente;
+
+implementation
+
+{$R *.dfm}
+
+end.

@@ -1,0 +1,59 @@
+unit untConsultaCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, System.ImageList, Vcl.ImgList,
+  Vcl.StdCtrls, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls, Vcl.DBCtrls, Vcl.Mask;
+
+type
+  TfrmConsultaCliente = class(TForm)
+    pnCampos: TPanel;
+    pnBotoes: TPanel;
+    btConfirmar: TButton;
+    btPesquisar: TButton;
+    btSair: TButton;
+    imgConsulta: TImageList;
+    lbDescricao: TLabel;
+    lbSituacao: TLabel;
+    DBGrid2: TDBGrid;
+    edCli_nome: TEdit;
+    cbCli_Ativo: TComboBox;
+    procedure btPesquisarClick(Sender: TObject);
+    procedure btSairClick(Sender: TObject);
+    procedure btConfirmarClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConsultaCliente: TfrmConsultaCliente;
+
+implementation
+
+{$R *.dfm}
+
+uses dmConexao;
+
+procedure TfrmConsultaCliente.btConfirmarClick(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TfrmConsultaCliente.btPesquisarClick(Sender: TObject);
+begin
+  dmConn.fdqCliente.Open('SELECT * FROM clientes '+
+                         'WHERE '+
+                           ' cli_nome LIKE ''%'+edCli_nome.Text+'%'' AND '+
+                           ' cli_ativo = '''+cbCli_Ativo.Text+'''');
+end;
+
+procedure TfrmConsultaCliente.btSairClick(Sender: TObject);
+begin
+  close;
+end;
+
+end.

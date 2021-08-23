@@ -1,0 +1,34 @@
+unit untFuncoes;
+
+interface
+
+function ValidarCampos(nome, ativo, tipo, cpf : string) : Boolean;
+
+implementation
+
+function ValidarCampos(nome, ativo, tipo, cpf : string) : Boolean;
+begin
+
+
+  if (nome = '') or (ativo = '') or (tipo = '') or (cpf = '') then
+    Result := False
+  else
+    Result := True;
+
+
+  {
+  if (dbeCli_nome.Text = '') then
+    dbeCli_nome.SetFocus
+  else if (dbeCli_ativo.Text = '') then
+    dbeCli_ativo.SetFocus
+  else if (dbeCli_tipo.Text = '') then
+    dbeCli_tipo.SetFocus
+  else if (dbeCli_cpf.Text = '') then
+    dbeCli_cpf.SetFocus
+  else
+    Result := True;
+  }
+
+end;
+
+end.
